@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Roads and directions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        body    {
+            max-width: 1080px;
+            font-size: 16px;
+            line-height: 1.5em;
+            font-family: Tahoma, Geneva, sans-serif;
+            margin: 0 auto;
+        }
+
+        p.naBlock   {
+            text-align: justify;
+        }
+
+        select  {
+            padding: 2px 4px;
+            border: 3px solid #712257;
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        select:focus  {
+            border: 3px solid #712257;
+        }
+
+        img.eximg   {
+            width: 300px;
+            height: auto;
+            border: 1px solid black;
+        }
+
+        table.res   {
+            width: 100%;
+            font-weight: bold;
+        }
+
+        table.res td    {
+            border-bottom: 12px solid transparent;
+            text-align: center; 
+            vertical-align: middle;
+            
+        }
+
+        button  {
+            background-color: black;
+            color: white;
+            padding:12px;
+            border: 2px solid black;
+        }
+
+        .ex1 select   {
+            width: 150px;
+        }
+
+        td.e   {
+            text-align: right;
+        }
+    </style>
+    <body>
+        <div class="ex1">
+            <h4>Exercise 1</h4>
+            <p>
+                <em>Look at the descriptions below. Each one of them describes a part of a road network. Decide which word fits the best.</em>
+            </p>
+            <div>
+                <table style="width: 100%">
+                    <tr>
+                        <td>A place, where multiple roads come together, usually in a T shape.</td>
+                        <td class="e"><excol data-opt="roundabout|junction|traffic lights|lane|interchange" data-ans="junction"></excol></td>
+                    </tr>
+                    <tr>
+                        <td>A signal device that is used to coordinate the flow of traffic.</td>
+                        <td class="e"><excol data-opt="highway|junction|traffic lights|lane|traffic sign" data-ans="traffic lights"></excol></td>
+                    </tr>
+                    <tr>
+                        <td>Big empty space, where people can stop and leave their vehicles.</td>
+                        <td class="e"><excol data-opt="interchange|parking lot|sidewalk|turning lane|roundabout|pedestrian crossing" data-ans="parking lot"></excol></td>
+                    </tr>
+                    <tr>
+                        <td>A time of day, when a lot of people leave their homes or work all at once, causing heavy traffic on the streets.</td>
+                        <td class="e"><excol data-opt="parking lot|lunch time|turning lane|traffic lights|rush hour" data-ans="rush hour"></excol></td>
+                    </tr>
+                    <tr>
+                        <td>A marked part of a road, where people are allowed to traverse the street.</td>
+                        <td class="e"><excol data-opt="parking lot|lane|traffic sign|junction|pedestrian crossing|roundabout|speed bump" data-ans="pedestrian crossing"></excol></td>
+                    </tr>
+                    <tr>
+                        <td>A part of a street, where only people are allowed to go.</td>
+                        <td class="e"><excol data-opt="pothole|lane|square|speedometer|avenue|highway|sidewalk|underpass" data-ans="sidewalk"></excol></td>
+                    </tr>
+                    <tr>
+                        <td>A very wide street, usually with a lot of pedestrian space and shops by the sides.</td>
+                        <td class="e"><excol data-opt="interchange|boulevard|fast lane|alley|lane|highway|turning lane|motorway" data-ans="boulevard"></excol></td>
+                    </tr>
+                    <tr>
+                        <td>You have to pay to be able to use this road.</td>
+                        <td class="e"><excol data-opt="overpass|junction|highway|causeway|parking spot|highway|toll road|parking lot" data-ans="toll road"></excol></td>
+                    </tr>
+                    <tr>
+                        <td>A road crossing, that has several height levels.</td>
+                        <td class="e"><excol data-opt="interchange|intersection|turning lane|rush hour|highway|pavement|junction" data-ans="interchange"></excol></td>
+                    </tr>
+                    <tr>
+                        <td>A part of a road that diverges to the left.</td>
+                        <td class="e"><excol data-opt="roundabout|pothole|corner lane|left turn|left-hand drive|speed bump|left-field" data-ans="left turn"></excol></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h4>Exercise 2</h4>
+            <p>
+                <em>You are going to hear four recordings. Each of the recordings describes a way home of one of the students. The students depart from school, which is 
+                marked as S on the map. Assign each of the maps to the correct student.</em>
+            </p>
+            <table class="res">
+                <tr>
+                    <td>A <img class="eximg" src="res/layout3-01.png" /></td>
+                    <td>B <img class="eximg" src="res/layout4-01.png" /></td>
+                    <td>C <img class="eximg" src="res/layout6-01.png" /></td>
+                </tr>
+                <tr>
+                    <td>D <img class="eximg" src="res/layout2-01.png" /></td>
+                    <td>E <img class="eximg" src="res/layout1-01.png" /></td>
+                    <td>F <img class="eximg" src="res/layout5-01.png" /></td>
+                </tr>
+            </table>
+            <table class="res">
+                <tr>
+                    <td>
+                        Chris <excol data-opt="A|B|C|D|E|F" data-ans="E"></excol>
+                        <audio controls>
+                            <source src="res/Chris.m4a" type="audio/mpeg">
+                          </audio>    
+                    </td>
+                    <td>
+                        Ada <excol data-opt="A|B|C|D|E|F" data-ans="D"></excol>
+                        <audio controls>
+                            <source src="res/Ada.m4a" type="audio/mpeg">
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Leon <excol data-opt="A|B|C|D|E|F" data-ans="A"></excol>
+                        <audio controls>
+                            <source src="res/Leon.m4a" type="audio/mpeg">
+                        </audio>
+                    </td>
+                    <td>
+                        Jill <excol data-opt="A|B|C|D|E|F" data-ans="B"></excol>
+                        <audio controls>
+                            <source src="res/Jill.m4a" type="audio/mpeg">
+                        </audio>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div>
+            <p><button onclick="correct();">ZKONTROLOVAT</button><strong id="cors"></strong></p>
+        </div>
+    </body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+
+
+            transformForms();
+        });
+
+        function transformForms() {
+
+            var exforms = document.querySelectorAll('excol');
+            exforms.forEach( el => {
+            var opts = el.dataset.opt.split('|');
+            var sel = document.createElement('select');
+            sel.dataset.ans = el.dataset.ans;
+            var poo = document.createElement('option');
+            poo.setAttribute('disabled', true); poo.setAttribute('selected', true); poo.setAttribute('value', true); poo.setAttribute('hidden', true);
+            sel.appendChild(poo);
+            opts.forEach(op => {
+                var foo = document.createElement('option');
+                foo.appendChild( document.createTextNode(op));
+                foo.value = op;
+                sel.appendChild(foo);
+            });
+            el.parentNode.replaceChild(sel, el);
+            });
+        }
+
+        function correct()  {
+            var exforms = document.querySelectorAll('select');
+            var co = 0;
+            var max = exforms.length;
+            exforms.forEach( el => {
+                if(el.value.length == 0)  {
+                    el.style.borderColor = "yellow";
+                }
+                else if (el.value != el.dataset.ans )   {
+                    el.style.borderColor = "red";
+                }
+                else  {
+                    el.style.borderColor = "green";
+                    co++;
+                }
+            });
+            document.getElementById("cors").innerHTML = "  " + co + " správně z " + max;
+        }
+    </script>
+</html>
